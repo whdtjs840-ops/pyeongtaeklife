@@ -4,11 +4,14 @@
 
 권장 저장소 이름: `pyeongtaeklife`
 
-저장소를 만든 뒤 이 로컬 폴더에서 실행합니다.
+원격 저장소:
+
+https://github.com/whdtjs840-ops/pyeongtaeklife
+
+저장소는 이미 생성되어 있고 `main` 브랜치가 연결되어 있습니다. 다시 push가 필요하면 이 로컬 폴더에서 실행합니다.
 
 ```powershell
-git remote add origin https://github.com/깃허브아이디/pyeongtaeklife.git
-git push -u origin main
+git push
 ```
 
 GitHub 인증 창이 뜨면 로그인합니다.
@@ -28,8 +31,10 @@ Cloudflare Dashboard에서:
 - Project name: `pyeongtaeklife`
 - Production branch: `main`
 - Framework preset: `None`
-- Build command: 비워둠
+- Build command: 비워둠 또는 `exit 0`
 - Build output directory: `dist`
+
+저장소 루트에 `wrangler.toml`이 있으며, Pages 출력 폴더도 `dist`로 지정되어 있습니다.
 
 ## 3. pyeongtaeklife.kr 연결
 
@@ -43,6 +48,7 @@ Cloudflare Dashboard에서:
 6. `pyeongtaeklife.kr` 추가
 
 필요하면 `www.pyeongtaeklife.kr`도 Custom domains에 추가하고, Cloudflare DNS에서 `www` CNAME이 Pages 프로젝트를 가리키는지 확인합니다.
+현재 사이트에는 `www.pyeongtaeklife.kr`에서 `pyeongtaeklife.kr`로 이동하는 301 리디렉션이 포함되어 있습니다.
 
 ## 4. 권장 DNS 구조
 

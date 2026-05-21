@@ -3,6 +3,7 @@
 배포 대상 폴더는 `dist`입니다. 루트 폴더에는 워드프레스 테마 zip이 포함되어 있으므로 그대로 올리지 마세요.
 
 권장 프로젝트명은 도메인과 맞춘 `pyeongtaeklife`입니다.
+원격 저장소는 `https://github.com/whdtjs840-ops/pyeongtaeklife`입니다.
 
 ## API 토큰으로 배포
 
