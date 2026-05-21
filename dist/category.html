@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고덕라이프 카테고리</title>
+    <meta name="description" content="평택 고덕 생활정보 카테고리별 2차 페이지입니다." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <p>운영자 검토형 지역 생활정보 사이트입니다. 평택시 공식 사이트가 아니며, 정책·신청 정보는 원문 출처를 함께 확인합니다.</p>
+        <nav aria-label="상단 메뉴">
+          <a href="index.html#trust">신뢰정책</a>
+          <a href="index.html#contact">제보</a>
+          <a href="index.html#required">승인준비</a>
+        </nav>
+      </div>
+
+      <div class="container header-main">
+        <a class="brand" href="index.html" aria-label="고덕라이프 홈">
+          <span class="brand-mark">GD</span>
+          <span>
+            <strong>고덕라이프</strong>
+            <small>평택 고덕 생활 가이드</small>
+          </span>
+        </a>
+        <form class="site-search" role="search">
+          <label class="screen-reader-text" for="categorySearch">검색어</label>
+          <input id="categorySearch" type="search" placeholder="예: 자이센트로, 고덕 학원, 지제역 SRT, 삼성전자 통근" />
+          <button type="submit">검색</button>
+        </form>
+      </div>
+
+      <nav class="primary-nav" aria-label="주요 카테고리">
+        <div class="container nav-inner">
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">메뉴</button>
+          <ul class="menu" id="primary-menu">
+            <li><a href="category.html?section=living" data-section-link="living">고덕 살이</a></li>
+            <li><a href="category.html?section=apartments" data-section-link="apartments">아파트 분석</a></li>
+            <li><a href="category.html?section=local" data-section-link="local">동네 가이드</a></li>
+            <li><a href="category.html?section=education" data-section-link="education">교육·학원</a></li>
+            <li><a href="category.html?section=transport" data-section-link="transport">교통·인프라</a></li>
+            <li><a href="category.html?section=news" data-section-link="news">고덕 소식</a></li>
+            <li><a href="category.html?section=samsung" data-section-link="samsung">삼성전자</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="content" class="category-page">
+      <section class="category-hero">
+        <div class="container category-hero-grid">
+          <div>
+            <p class="eyebrow" id="categoryEyebrow">GODEOK LIFE GUIDE</p>
+            <h1 id="categoryTitle">고덕 살이</h1>
+            <p id="categoryDescription">고덕 주민이 자주 찾는 생활정보를 카테고리별로 정리합니다.</p>
+          </div>
+          <aside class="category-summary" aria-label="카테고리 운영 기준">
+            <strong id="categoryTarget">핵심 타겟</strong>
+            <span id="categoryTargetText">고덕 신규 입주민과 이사 예정자</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="container category-layout">
+        <div class="category-main">
+          <section class="advantage-module" id="advantageModule" aria-label="카테고리 특화 기능">
+            <div class="section-head compact">
+              <p class="eyebrow" id="featureEyebrow">경쟁 우위 기능</p>
+              <h2 id="featureTitle">카테고리 특화 도구</h2>
+              <p id="featureDescription">네이버 블로그와 카페보다 찾기 쉽게 데이터, 지도, 필터, 일정 정보를 구조화합니다.</p>
+            </div>
+            <div id="featureContent"></div>
+          </section>
+
+          <div class="section-head compact">
+            <p class="eyebrow">대표 글</p>
+            <h2>먼저 발행할 글 목록</h2>
+          </div>
+          <div class="post-board" id="postBoard"></div>
+        </div>
+
+        <aside class="category-sidebar">
+          <section class="sidebar-box">
+            <h2>하위 메뉴</h2>
+            <ul id="subcategoryList"></ul>
+          </section>
+          <section class="sidebar-box">
+            <h2>광고 연결 후보</h2>
+            <p id="adHint">지역 업체 광고와 애드센스 콘텐츠를 함께 연결합니다.</p>
+          </section>
+          <section class="sidebar-box">
+            <h2>운영 방식</h2>
+            <ul>
+              <li>출처와 기준일 표기</li>
+              <li>월 1회 이상 최신화</li>
+              <li>직접 작성 글 우선</li>
+            </ul>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container copyright">
+        <span>© 2026 고덕라이프</span>
+        <a href="index.html">홈으로</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="category.js"></script>
+  </body>
+</html>

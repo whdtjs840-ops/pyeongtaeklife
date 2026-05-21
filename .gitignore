@@ -1,0 +1,11 @@
+# Local/package artifacts
+*.zip
+node_modules/
+.wrangler/
+
+# WordPress theme export is separate from the Cloudflare Pages static site.
+wp-theme/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
